@@ -1,3 +1,60 @@
-body {
- 
+html, body {
+ height: 100vh;
+ overflow: hidden;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile Responsiveness */ 
+
+.App {
+    height: 100vh;
+    background-image: url('./assets/office-1730940_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 30px 0;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+}
+
+button, textarea {
+    border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    margin: auto;
+    border-color: white;
+    background-color: #ffffffbd;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+
+/* Desktop responsiveness */
+
+@media screen and (min-width: 800px){
+    .App {
+        background-image: url('./assets/office-1730940_1280.jpg');
+    }   
+
+    textarea {
+        width: initial;
+    }
 }
